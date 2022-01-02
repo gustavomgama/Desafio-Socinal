@@ -31,9 +31,12 @@ gem 'pry-nav'
 gem 'pry-rails'
 gem 'rest-client', '~> 2.1'
 
-group :development, :test do
+group :development do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: %i[mri mingw x64_mingw]
+end
+
+group :test do
   gem 'database_cleaner-active_record'
   gem 'factory_bot_rails'
   gem 'rspec-collection_matchers'
