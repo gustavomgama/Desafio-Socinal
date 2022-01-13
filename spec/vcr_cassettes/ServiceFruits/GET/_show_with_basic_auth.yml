@@ -1,0 +1,63 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://www.fruityvice.com/api/fruit/Banana
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*"
+      User-Agent:
+      - rest-client/2.1.0 (linux x86_64) ruby/3.0.3p157
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Host:
+      - www.fruityvice.com
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Server:
+      - nginx/1.16.1
+      Date:
+      - Tue, 04 Jan 2022 16:13:19 GMT
+      Content-Type:
+      - text/plain;charset=UTF-8
+      Content-Length:
+      - '257'
+      Connection:
+      - keep-alive
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      Cache-Control:
+      - no-cache, no-store, max-age=0, must-revalidate
+      Pragma:
+      - no-cache
+      Expires:
+      - '0'
+      X-Frame-Options:
+      - DENY
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+            "genus": "Musa",
+            "name": "Banana",
+            "id": 1,
+            "family": "Musaceae",
+            "order": "Zingiberales",
+            "nutritions": {
+                "carbohydrates": 22,
+                "protein": 1,
+                "fat": 0.2,
+                "calories": 96,
+                "sugar": 17.2
+            }
+        }
+  recorded_at: Tue, 04 Jan 2022 16:13:19 GMT
+recorded_with: VCR 6.0.0
