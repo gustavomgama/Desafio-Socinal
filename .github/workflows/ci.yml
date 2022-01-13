@@ -29,6 +29,9 @@ jobs:
 
       - name: Setup test database
         run:
+          sudo systemctl start postgresql
+          sudo service postgresql start
+          service postgresql status
           bin/setup
           bin/rails db:setup
 
